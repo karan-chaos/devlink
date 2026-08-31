@@ -710,6 +710,10 @@ app.include_router(
     email_templates.router, prefix="/api", tags=["Email Notification Templates"]
 )
 
+from app.routers import streaks
+
+app.include_router(streaks.router, prefix="/api", tags=["Developer Streaks"])
+
 from app.routers import developer_insights
 
 app.include_router(
