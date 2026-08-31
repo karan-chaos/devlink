@@ -714,6 +714,10 @@ from app.routers import project_polls
 
 app.include_router(project_polls.router, prefix="/api", tags=["Project Polls"])
 
+from app.routers import contribution_boards
+
+app.include_router(contribution_boards.router, prefix="/api", tags=["Contribution Boards"])
+
 from app.routers import developer_insights
 
 app.include_router(
